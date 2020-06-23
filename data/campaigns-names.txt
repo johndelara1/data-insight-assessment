@@ -4,25 +4,25 @@
 → Input variables:
 # customer-specific attributes:
 1.  age (numeric)
-2.  job : type of job (categorical: "admin.","unknown","unemployed","management","housemaid","entrepreneur","student",
-                                    "blue-collar","self-employed","retired","technician","services")
+2.  job : tipo de trabalho (categórico: "admin.", "desconhecido", "desempregado", "gerência", "empregada doméstica", "empreendedor", "estudante",
+                                     "trabalhadores autônomos", "aposentados", "técnicos", "serviços")
 3.  marital : marital status (categorical: "married","divorced","single"; note: "divorced" means divorced or widowed)
 4.  education (categorical: "unknown","secondary","primary","tertiary")
-5.  default: has credit in default? (binary: "yes","no")
-6.  balance: average yearly balance, in euros (numeric)
-7.  housing: has housing loan? (binary: "yes","no")
-8.  loan: has personal loan? (binary: "yes","no")
-# related with the last contact of the current campaign:
-9.  contact: contact communication type (categorical: "unknown","telephone","cellular")
-10. day: last contact day of the month (numeric)
-11. month: last contact month of year (categorical: "jan", "feb", "mar", ..., "nov", "dec")
-12. duration: last contact duration, in seconds (numeric)
+5.  default: tem crédito por padrão? (binário: "sim", "não")
+6.  balance: saldo médio anual, em euros (numérico)
+7.  housing: habitação: tem empréstimo habitacional? (binário: "sim", "não")
+8.  loan: tem empréstimo pessoal? (binário: "sim", "não")
+# relacionados ao último contato da campanha atual:
+9.  contact: tipo de comunicação de contato (categórico: "desconhecido", "telefone", "celular")
+10. day: último dia de contato do mês (numérico)
+11. month: mês do último contato do ano (categórico: "jan", "fev", "mar", ..., "nov", "dec")
+12. duration: duração do último contato, em segundos (numérico)
 
 # other attributes:
-13. campaign: number of contacts performed during this campaign and for this client (numeric, includes last contact)
-14. pdays: number of days that passed by after the client was last contacted from a previous campaign (numeric,.1 means client was not previously contacted)
-15. previous: number of contacts performed before this campaign and for this client (numeric)
-16. poutcome: outcome of the previous marketing campaign (categorical: "unknown","other","failure","success")
+13. campaign: número de contatos realizados durante esta campanha e para este cliente (numérico, inclui o último contato)
+14. pdays: número de dias que passaram depois que o cliente foi contatado pela última vez em uma campanha anterior (numérico, .1 significa que o cliente não foi contatado anteriormente)
+15. previous: número de contatos realizados antes desta campanha e para este cliente (numérico)
+16. poutcome: resultado da campanha de marketing anterior (categórica: "desconhecido", "outro", "falha", "sucesso")
 
 → Output variable (desired target):
-17. y - has the client subscribed a term deposit? (binary: "yes","no")
+17. y - o cliente assinou um depósito a prazo? (binário: "sim", "não")
